@@ -3,12 +3,14 @@ package com.itdie.ItDiematchingserver.model;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 
 @Entity
 @Builder
 @RequiredArgsConstructor
+@AllArgsConstructor
 public class User {
     @Id
     private String studentId;
